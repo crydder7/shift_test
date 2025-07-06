@@ -35,7 +35,6 @@ class ItemViewController: UIViewController {
         titleLabel.adjustsFontSizeToFitWidth = true
         view.addSubview(titleLabel)
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 70).isActive = true
-//        titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -70).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
@@ -91,9 +90,5 @@ class ItemViewController: UIViewController {
         imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
-    }
-
-    @objc func dismissScreen(){
-        dismiss(animated: true)
     }
 }

@@ -1,7 +1,7 @@
 import UIKit
 
 
-class LoginViewController: UIViewController,UITextFieldDelegate {
+class LoginViewController: UIViewController {
     let firstNameField = UITextField()
     let lastNameField = UITextField()
     let passwordField = UITextField()
@@ -288,30 +288,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     @objc func fieldDidChanged(){
         updateFields()
-    }
-    
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        return true
-    }
-    
-    
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        return true
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            switch textField {
-            case firstNameField:
-                lastNameField.becomeFirstResponder()
-            case lastNameField:
-                passwordField.becomeFirstResponder()
-            case passwordField:
-                checkPasswordField.becomeFirstResponder()
-            
-            default:
-                textField.resignFirstResponder()
-            }
-            return true
     }
 }
 

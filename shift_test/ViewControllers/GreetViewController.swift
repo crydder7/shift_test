@@ -32,8 +32,4 @@ class GreetViewController: UIViewController {
         greetLabel.numberOfLines = 0
         view.addSubview(greetLabel)
     }
-    
-    @objc func dismissScreen(){
-        dismiss(animated: true)
-    }
 }
